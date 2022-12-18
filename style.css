@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+section {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+.current-trans {
+  font-size: 2rem;
+}
+.btns {
+  /* background-color: rebeccapurple; */
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  margin: 20px 0;
+  position: relative;
+}
+.btns button {
+  border: none;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.btns::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: grey;
+  left: 50%;
+}
+.btns-sharp button {
+  font-size: 0.8rem;
+}
+.btn-selected {
+  background-color: lightgreen;
+}
